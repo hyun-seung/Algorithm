@@ -13,12 +13,13 @@ public class 호텔_1106 {
 
     static int C;
     static int N;
-    static int[] dp = new int[C+101];
+    static int[] dp;
 
     public static void base() throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         C = Integer.parseInt(st.nextToken());
         N = Integer.parseInt(st.nextToken());
+        dp = new int[C+101];
     }
 
     public static void main(String[] args) throws IOException {
