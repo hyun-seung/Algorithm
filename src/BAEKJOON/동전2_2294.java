@@ -32,7 +32,7 @@ public class 동전2_2294 {
             coin[i] = Integer.parseInt(br.readLine());
         }
 
-        Arrays.fill(dp, Integer.MAX_VALUE);
+        Arrays.fill(dp, Integer.MAX_VALUE-1);
 
         dp[0] = 0;
 
@@ -42,7 +42,7 @@ public class 동전2_2294 {
             }
         }
 
-        if(dp[N] == Integer.MAX_VALUE) {
+        if(dp[K] == Integer.MAX_VALUE-1) {
             System.out.println(-1);
         } else {
             System.out.println(dp[K]);
