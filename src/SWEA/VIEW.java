@@ -28,11 +28,11 @@ public class VIEW {
 		
 		for(int i=2; i<=n; i++) {
 			int l1 = arr[i]-arr[i-2];
-            int l2 = arr[i]-arr[i-1];
-            int r1 = arr[i]-arr[i+1];
-            int r2 = arr[i]-arr[i+2];
-            if(l1<0 || l2<0 || r1<0 || r2<0) continue;
-            result += Math.min(l1, Math.min(l2, Math.min(r1, r2)));
+            		int l2 = arr[i]-arr[i-1];
+            		int r1 = arr[i]-arr[i+1];
+            		int r2 = arr[i]-arr[i+2];
+            		if(l1<0 || l2<0 || r1<0 || r2<0) continue;
+            			result += Math.min(l1, Math.min(l2, Math.min(r1, r2)));
 		}
 		return result;
 	}
